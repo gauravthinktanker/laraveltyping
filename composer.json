@@ -17,7 +17,7 @@
     "scripts": {
         "migrate": [
             "php artisan migrate --env=$LARAVEL_ENV",
-            "php artisan migrate --package=\"laraveltyping/typing\" --env=$LARAVEL_ENV",
+            "php artisan migrate --package=\"laraveltyping/typing\" --env=$LARAVEL_ENV"
         ]
     },
     "authors": [
