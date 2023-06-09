@@ -23,10 +23,7 @@ class TYPINGServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/views', 'typing');
         $this->loadViewsFrom(__DIR__.'/storage', 'typing');
-        //$this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
-        $this->publishes([
-            __DIR__ . '/Database/migrations' => database_path('migrations')
-        ], 'migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
         
 
     }
