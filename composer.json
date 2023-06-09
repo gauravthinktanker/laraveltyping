@@ -14,6 +14,11 @@
             ]
         }
     },
+    "scripts": {
+        "migrate": [
+            "php artisan migrate --env=$LARAVEL_ENV"
+        ]
+    },
     "authors": [
         {
             "name": "gaurav",
