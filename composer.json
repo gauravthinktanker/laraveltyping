@@ -1,0 +1,24 @@
+{
+    "name": "laraveltyping/typing",
+    "description": "Typing System For Thinktanker",
+    
+    "autoload": {
+        "psr-4": {
+            "Laraveltyping\\Typing\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraveltyping\\Typing\\TypingServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "gaurav",
+            "email": "gaurav.thinktanker@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
