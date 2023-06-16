@@ -24,11 +24,6 @@ class TYPINGServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/views', 'typing');
         $this->loadViewsFrom(__DIR__.'/storage', 'typing');
         $this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
-        Menu::create('navbar', function($menu) {
-            // URL, Title, Attributes
-            $menu->url('typing', 'Typing', ['target' => 'blank']);
-        });
-        
 
     }
 }
