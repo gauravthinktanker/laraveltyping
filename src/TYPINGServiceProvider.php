@@ -4,7 +4,7 @@ namespace Laraveltyping\Typing;
 
 use Illuminate\Support\ServiceProvider;
 
-class TYPINGServiceProvider extends ServiceProvider
+class TypingServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
