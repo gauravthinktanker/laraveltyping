@@ -40,7 +40,7 @@ class TypingController extends Controller
             $appTheme = ['sidebar_theme'=>'dark','header_color'=>''];
             $appTheme =(object) ($appTheme);
             $sidebarUserPermissions = [];
-            $sidebarUserPermissions = ['view_overview_dashboard'=>4,'add_employees'=>4,'view_lead'=>5,'view_clients'=>5,'view_employees'=>5,'view_leave'=>5,'view_attendance'=>5,'view_holiday'=>5,'view_contract'=>5,'view_projects'=>5,'view_tasks'=>5,'view_timelogs'=>5,'view_estimates'=>5,'view_invoices'=>5,'view_payments'=>5,'view_expenses'=>5,'view_lead_proposals'=>5,'view_bankaccount'=>5,'view_tickets'=>5,'view_events'=>5,'view_notice'=>5,'view_task_report'=>5,'view_time_log_report'=>5,'view_finance_report'=>5,'view_income_expense_report'=>5,'view_leave_report'=>5,'view_attendance_report'=>5,'manage_company_setting'=>4];
+            $sidebarUserPermissions = ['view_overview_dashboard'=>4,'add_employees'=>4,'view_lead'=>5,'view_product'=>5,'view_clients'=>5,'view_employees'=>5,'view_leave'=>5,'view_attendance'=>5,'view_holiday'=>5,'view_contract'=>5,'view_projects'=>5,'view_tasks'=>5,'view_timelogs'=>5,'view_estimates'=>5,'view_invoices'=>5,'view_payments'=>5,'view_expenses'=>5,'view_lead_proposals'=>5,'view_bankaccount'=>5,'view_tickets'=>5,'view_events'=>5,'view_notice'=>5,'view_task_report'=>5,'view_time_log_report'=>5,'view_finance_report'=>5,'view_income_expense_report'=>5,'view_leave_report'=>5,'view_attendance_report'=>5,'manage_company_setting'=>4];
             //$status = json_decode($status);
          //   $status = json_encode($status,true);
            // dd($status);
