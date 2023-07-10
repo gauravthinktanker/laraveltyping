@@ -35,7 +35,7 @@ class TypingController extends Controller
          $this->unreadNotificationCount = 0;
          $this->pageTitle = "Typing";
 
-        $txtFile = file_get_contents(__DIR__.'\storage\paragraph.txt');
+        $txtFile = file_get_contents(__DIR__.'/storage/paragraph.txt');
         $lines = preg_split('/[\n\r]+/', $txtFile);
         $sentence = $lines[array_rand($lines)];
         $speed = DB::table('typingspeed')->select('speed')->where('user_id',$id)->orderBy('id', 'desc')->take(10)->get()->toArray();
@@ -65,7 +65,7 @@ class TypingController extends Controller
 
     public function test_ajax(Request $request)
     {   
-        $txtFile = file_get_contents(__DIR__.'\storage\paragraph.txt');
+        $txtFile = file_get_contents(__DIR__.'/storage/paragraph.txt');
         $lines = preg_split('/[\n\r]+/', $txtFile);
         $sentence = $lines[array_rand($lines)];
         return response()->json(['sentence'=>$sentence]);
