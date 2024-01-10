@@ -75,10 +75,12 @@ class TypingController extends Controller
     {
         $user = session()->get('user');
         $id = $user->id;
+        date_default_timezone_set('Asia/Kolkata');
         DB::table('typingspeed')->where('user_id',$id)->insert([
             'speed' => $request->NWPM,
             'user_id' => $id,
-            'accuracy' => $request->Accuracy
+            'accuracy' => $request->Accuracy,
+            'created_at'=>date('Y-m-d h:i:s')
         ]);
         $speed = DB::table('typingspeed')->select('speed')->where('user_id',$id)->orderBy('id', 'desc')->take(10)->get()->toArray();
         $accuracy =  DB::table('typingspeed')->select('accuracy')->where('user_id',$id)->orderBy('id', 'desc')->take(10)->get()->toArray();
