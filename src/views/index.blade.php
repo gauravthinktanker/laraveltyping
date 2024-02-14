@@ -356,7 +356,7 @@
         }, 100)
 
       } else {
-        if (textEntered == originTextMatch) {
+        if (textEntered == originTextMatch && !event.ctrlKey) {
           data.incorrect_word_count = incorrect_spell_count
           //$("#origin-text").css("background-color", "##ffffff");
           $("#origin-text").removeClass("wrong_word_color");
